@@ -1,7 +1,5 @@
 package org.skypro.skyshop.product;
 
-import java.util.Objects;
-
 public class Product {
     private String title;
     private int price;
@@ -20,21 +18,11 @@ public class Product {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product)) return false;
-        Product product = (Product) o;
-        return price == product.price && Objects.equals(title, product.title);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(title, price);
-    }
-
-    @Override
     public String toString() {
-        return title + " " + price + "₽";
+        return "Product{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
 
