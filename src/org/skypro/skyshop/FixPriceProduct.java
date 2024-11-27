@@ -18,5 +18,7 @@ class FixPriceProduct extends Product {
         return true;
     }
 
-}
+
+    }
+
 
